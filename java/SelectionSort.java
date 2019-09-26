@@ -1,3 +1,14 @@
+/**
+ * Selection sort Program
+ * Created on 26 September 2019
+ * 
+ * The algorithm divides the input list into two parts: the sublist of items already sorted, which is built up from left to right at the front (left) of the list, and the sublist of items remaining to be sorted that occupy the rest of the list.
+ * 
+ * It has average complexity of O(n2)
+*/
+
+package Sorting.java;
+
 public class SelectionSort 
 {
 
@@ -20,7 +31,6 @@ public class SelectionSort
 		/* Assinging the array into new list */
 		for (int k=0; k<inList.length; k++) 
 			outList[k] = inList[k]; 
-
 		
 		do
 		{
