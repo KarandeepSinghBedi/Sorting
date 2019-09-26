@@ -25,14 +25,17 @@ public class BubbleSort
 		for (int k=0; k<inList.length; k++) 
 			outList[k] = inList[k]; 
 
+		int count = 0;
 		int  temp;
 		int i = outList.length -1;
 
 		/*Swapping Logic*/
 		while  ( i > 0)
 		{
+			count++;
 			for (int j = 0; j < i ; j++ )
 			{
+				count++;
 				if (outList[j] > outList[j+1])
 				{
 					temp = outList[j];
@@ -51,12 +54,15 @@ public class BubbleSort
 		}
 
 		System.out.println();
-		
+
 		/*Printing the Sorted list*/
 		System.out.print("Sorted List is : " );
 		for (int j =0 ; j < outList.length ; j++ )
 		{
 			System.out.print(outList[j] +" ");
 		}
+
+		System.out.println();
+		System.out.print("Cost : " + count);
 	}
 }
